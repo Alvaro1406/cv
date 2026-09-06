@@ -13,6 +13,11 @@
         alt="Profile Picture"
         class="tb:w-[350px] tb:h-[350px] md:w-full md:h-full rounded-2xl shadow-xl/30 shadow-primary object-cover"
       />
+      <p
+        class="text-[18px] text-muted-foreground text-justify border-l-2 border-primary pl-4"
+      >
+        {{ $t("heroSection.phrase") }}
+      </p>
       <p class="text-[18px] text-muted-foreground text-justify">
         {{ $t("heroSection.subtitle") }}
       </p>
