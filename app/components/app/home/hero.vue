@@ -1,36 +1,93 @@
 <template>
-  <div
-    class="flex xs:flex-col md:flex-row py-6 px-4 xs:gap-4 md:gap-12 w-full md:justify-center md:items-center md:min-h-[85vh]"
+  <section
+    class="relative isolate overflow-hidden px-2 py-6 lg:min-h-[85vh] lg:py-20"
   >
-    <div class="flex flex-col gap-8 md:w-[60%]">
-      <div class="w-full">
-        <h3 class="text-[42px] font-bold">{{ $t("heroSection.title") }}</h3>
-        <h3 class="text-[36px] font-bold text-primary">Alvaro Beruvides</h3>
-      </div>
-      <img
-        v-if="isTablet()"
-        src="~/assets/images/alvaro.webp"
-        alt="Profile Picture"
-        class="tb:w-[350px] tb:h-[350px] md:w-full md:h-full rounded-2xl shadow-xl/30 shadow-primary object-cover"
-      />
-      <p class="text-[18px] text-muted-foreground text-justify">
-        {{ $t("heroSection.subtitle") }}
-      </p>
-      <div>
-        <buttonCmp :label="$t('heroSection.buttonText')" variant="solid" />
-      </div>
-    </div>
     <div
-      v-if="!isTablet()"
-      class="flex md:justify-center md:items-center py-6 md:w-[40%]"
+      class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20"
     >
-      <img
-        src="~/assets/images/alvaro.webp"
-        alt="Profile Picture"
-        class="tb:w-[350px] tb:h-[350px] md:w-full md:h-full rounded-2xl shadow-xl/30 shadow-primary object-cover"
-      />
+      <div class="flex flex-col gap-8">
+        <div class="space-y-5">
+          <span
+            class="inline-flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary"
+          >
+            <span class="h-2 w-2 animate-pulse rounded-full bg-primary" />
+            {{ $t("heroSection.availability") }}
+          </span>
+
+          <div>
+            <p class="text-lg font-medium text-muted-foreground">
+              {{ $t("heroSection.iam") }}
+            </p>
+
+            <h1
+              class="text-3xl font-black leading-none tracking-tight sm:text-6xl lg:text-8xl flex gap-2"
+            >
+              <span class="text-primary">Alvaro</span>
+              <span class="block">Beruvides</span>
+            </h1>
+
+            <h2
+              class="mt-2 max-w-2xl text-xl font-bold leading-tight sm:text-3xl lg:text-4xl"
+            >
+              {{ $t("heroSection.title") }}
+            </h2>
+          </div>
+        </div>
+
+        <div v-if="isTablet()" class="relative mx-auto w-full max-w-md">
+          <div
+            class="relative overflow-hidden rounded-[2rem] border border-border bg-card p-3 shadow-2xl shadow-primary/20"
+          >
+            <img
+              src="~/assets/images/alvaro.webp"
+              alt="Alvaro Beruvides"
+              class="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+            />
+
+            <div
+              class="absolute bottom-7 left-7 right-7 rounded-xl border border-white/20 bg-black/50 p-4 text-white backdrop-blur-md"
+            >
+              <p class="mt-1 font-semibold">Front-End Development & QA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-2xl space-y-5 xs:pt-8 sm:pt-0">
+          <p
+            class="border-l-2 border-primary pl-5 text-lg leading-8 text-muted-foreground sm:text-xl"
+          >
+            {{ $t("heroSection.phrase") }}
+          </p>
+
+          <p class="text-base leading-7 text-muted-foreground sm:text-lg">
+            {{ $t("heroSection.subtitle") }}
+          </p>
+        </div>
+
+        <div class="flex flex-row items-center gap-4">
+          <buttonCmp :label="$t('heroSection.buttonText')" variant="solid" />
+        </div>
+      </div>
+
+      <div v-if="!isTablet()" class="relative mx-auto w-full max-w-md">
+        <div
+          class="relative overflow-hidden rounded-[2rem] border border-border bg-card p-3 shadow-2xl shadow-primary/20"
+        >
+          <img
+            src="~/assets/images/alvaro.webp"
+            alt="Alvaro Beruvides"
+            class="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+          />
+
+          <div
+            class="absolute bottom-7 left-7 right-7 rounded-xl border border-white/20 bg-black/50 p-4 text-white backdrop-blur-md"
+          >
+            <p class="mt-1 font-semibold">Front-End Development & QA</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

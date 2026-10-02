@@ -24,3 +24,9 @@ logs
 !.env.example
 
 /app/generated/prisma
+
+TODO
+
+prisma/migrations
+prisma/data-seed
+prisma/seed.ts
