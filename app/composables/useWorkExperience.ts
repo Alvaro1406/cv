@@ -28,6 +28,10 @@ export const useWorkExperience = () => {
         workExperience.value = response.data.map((item) => ({
           ...item,
           label: item.name,
+          projects: item.projects.map((project, index) => ({
+            ...project,
+            number: index + 1,
+          })),
         }));
       }
 

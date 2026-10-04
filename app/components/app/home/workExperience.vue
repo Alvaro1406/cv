@@ -27,6 +27,26 @@
         <p class="text-md leading-7 text-muted-foreground mt-2">
           {{ item.description[locale] }}
         </p>
+
+        <UTimeline
+          :items="item.projects"
+          size="xs"
+          :ui="{
+            date: 'float-end ms-1',
+            description:
+              'px-3 py-2 ring ring-default mt-2 rounded-md text-default',
+          }"
+          class="sm:w-96 mt-4"
+          :default-value="6"
+        >
+          <template #indicator="{ item }"> {{ item.number }} </template>
+          <template #title="{ item }">
+            <span>{{ item.name }}</span>
+          </template>
+          <template #description="{ item }">
+            <span>{{ item.description[locale] }}</span>
+          </template>
+        </UTimeline>
       </template>
     </UAccordion>
   </div>
