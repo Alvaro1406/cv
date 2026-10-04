@@ -10,9 +10,15 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  schemas  = ["public", "security", "manage"]
+  schemas  = ["public", "security", "manage", "contact"]
 }
 
+/**
+ * ****************** Schema Security *******************
+ */
+/**
+ * User
+ */
 model User {
   id          String        @id @default(uuid())
   username    String        @unique
@@ -30,6 +36,9 @@ model User {
   @@schema("security")
 }
 
+/**
+ * User Session
+ */
 model UserSession {
   id        String   @id @default(uuid())
   userId    String
@@ -44,23 +53,8 @@ model UserSession {
 }
 
 /**
- * It will be applied in the future for better implementation and management of skills.
+ * ****************** Schema Manage *******************
  */
-/**
- * model Skills {
- * id                 String           @id @default(uuid())
- * name               String
- * level              Int
- * type               TypeSkills
- * technicalMasteryId String
- * technicalMastery   TechnicalMastery @relation(fields: [technicalMasteryId], references: [id])
- * createdAt          DateTime         @default(now())
- * updatedAt          DateTime         @updatedAt
- * @@index([name, type, createdAt])
- * @@schema("manage")
- * }
- */
-
 /**
  * Technical Mastery
  */
@@ -68,9 +62,6 @@ model TechnicalMastery {
   id          String   @id @default(uuid())
   name        Json     @default("{}")
   description Json     @default("{}")
-  /**
-   * skills      Skills[]
-   */
   tags        String[]
   image       String
   createdAt   DateTime @default(now())
@@ -118,21 +109,23 @@ model WorkExperience {
  * Projects
  */
 model Projects {
-  id          String   @id @default(uuid())
-  name        String
-  description Json     @default("{}")
-  image       String
-  url         String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  workExperience   WorkExperience @relation(fields: [workExperienceId], references: [id])
+  id               String   @id @default(uuid())
+  name             String
+  description      Json     @default("{}")
+  url              String
   workExperienceId String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  workExperience WorkExperience @relation(fields: [workExperienceId], references: [id])
 
   @@index([id, name, createdAt])
   @@schema("manage")
 }
 
+/**
+ * ****************** Schema Contact *******************
+ */
 /**
  * Contact
  */
@@ -151,7 +144,7 @@ model Contact {
   updatedAt    DateTime       @updatedAt
 
   @@index([email, unread, archived, createdAt])
-  @@schema("manage")
+  @@schema("contact")
 }
 
 /**
@@ -168,14 +161,5 @@ model Notifications {
   updatedAt   DateTime @updatedAt
 
   @@index([unread, createdAt])
-  @@schema("manage")
-}
-
-enum TypeSkills {
-  FrontEnd
-  BackEnd
-  Design
-  Tools
-
-  @@schema("manage")
+  @@schema("contact")
 }
