@@ -6,5 +6,32 @@
     "phrase": "Beyond distributed architecture and latency optimization, I understand engineering as a discipline of continuous craftsmanship, systematic curiosity, and radical attention to detail.",
     "subtitle": "I firmly believe that high-impact software doesn't emerge solely from efficient algorithms, but from a deep empathy for the end user, transparent collaboration, and an relentless pursuit of technical simplicity. Every line of code is a commitment to long-term stability.",
     "buttonText": "Contact me"
+  },
+  "aboutMe": {
+    "eyebrow": "Get to know me",
+    "roles": {
+      "frontend": "Senior Front-End Developer",
+      "projectManager": "Project Manager",
+      "qaAnalyst": "QA Analyst"
+    },
+    "intro": "I’m 25 and based in Valinhos, São Paulo, Brazil. I bring more than 4 years of professional experience building and delivering digital products.",
+    "description": "I specialize in turning complex ideas into efficient, scalable, people-centered web experiences. I combine a strong technical foundation in interface development with an end-to-end perspective on how software is planned, built, and validated.",
+    "approach": "To me, web development is more than writing code: it is where design, architecture, and strategy meet. My goal is to build dependable solutions that deliver real value to businesses and the people who use them.",
+    "profileLabel": "Profile summary",
+    "locationLabel": "Currently based in",
+    "ageLabel": "years old",
+    "experienceLabel": "years of experience",
+    "locationNote": "Open to collaborating on new challenges, teams, and innovative projects.",
+    "areas": {
+      "frontendTitle": "Front-End Development",
+      "frontendDescription": "I build modern, functional, and optimized web applications, with a focus on usability, performance, and thoughtful details.",
+      "projectTitle": "Project Management",
+      "projectDescription": "I coordinate digital projects and teams to meet deadlines, align technical work with business goals, and keep communication clear.",
+      "qaTitle": "Quality Assurance",
+      "qaDescription": "I plan testing and validation processes to catch issues early and deliver robust, reliable products that are ready for their users."
+    },
+    "ctaTitle": "Have a project in mind?",
+    "ctaDescription": "I’m always open to connecting and exploring new challenges.",
+    "ctaButton": "Let’s talk"
   }
 }

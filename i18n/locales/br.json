@@ -6,5 +6,32 @@
     "phrase": "Além da arquitetura distribuída e da otimização das latências, entendo a engenharia como uma disciplina que envolve um trabalho artesanal contínuo, curiosidade sistemática e atenção radical aos detalhes.",
     "subtitle": "Acredito firmemente que softwares de grande impacto não surgem apenas de algoritmos eficientes, mas de uma profunda empatia pelo usuário final, da colaboração transparente e da busca incessante pela simplicidade técnica. Cada linha de código é um compromisso com a estabilidade a longo prazo.",
     "buttonText": "Entre em contato comigo"
+  },
+  "aboutMe": {
+    "eyebrow": "Sobre mim",
+    "roles": {
+      "frontend": "Desenvolvedor Front-End Sênior",
+      "projectManager": "Gerente de Projetos",
+      "qaAnalyst": "Analista de QA"
+    },
+    "intro": "Tenho 25 anos e moro em Valinhos, São Paulo, Brasil. Tenho mais de 4 anos de experiência profissional criando e entregando produtos digitais.",
+    "description": "Sou especializado em transformar ideias complexas em experiências web eficientes, escaláveis e centradas nas pessoas. Uno uma sólida base técnica em desenvolvimento de interfaces a uma visão completa de como o software é planejado, desenvolvido e validado.",
+    "approach": "Para mim, desenvolvimento web é muito mais do que escrever código: é o encontro entre design, arquitetura e estratégia. Meu objetivo é criar soluções confiáveis que gerem valor real para as empresas e para quem as utiliza.",
+    "profileLabel": "Resumo do perfil",
+    "locationLabel": "Atualmente em",
+    "ageLabel": "anos de idade",
+    "experienceLabel": "anos de experiência",
+    "locationNote": "Aberto a colaborar em novos desafios, equipes e projetos inovadores.",
+    "areas": {
+      "frontendTitle": "Desenvolvimento Front-End",
+      "frontendDescription": "Crio aplicações web modernas, funcionais e otimizadas, com atenção especial à usabilidade, ao desempenho e aos detalhes.",
+      "projectTitle": "Gestão de projetos",
+      "projectDescription": "Coordeno projetos digitais e equipes para cumprir prazos, alinhar objetivos técnicos às metas do negócio e manter uma comunicação clara.",
+      "qaTitle": "Qualidade e QA",
+      "qaDescription": "Planejo testes e processos de validação para identificar problemas cedo e entregar produtos robustos, confiáveis e prontos para seus usuários."
+    },
+    "ctaTitle": "Tem um projeto em mente?",
+    "ctaDescription": "Estou sempre aberto a conversar e explorar novos desafios.",
+    "ctaButton": "Vamos conversar"
   }
 }

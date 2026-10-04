@@ -6,5 +6,32 @@
     "phrase": "Más allá de la arquitectura distribuida y la optimización de latencias, entiendo la ingeniería como una disciplina de artesanía continua, curiosidad sistemática y atención radical al detalle.",
     "subtitle": "Creo firmemente que el software de alto impacto no surge únicamente de algoritmos eficientes, sino de una profunda empatía por el usuario final, la colaboración transparente y la búsqueda incesante de simplicidad técnica. Cada línea de código es un compromiso con la estabilidad a largo plazo.",
     "buttonText": "Contacta comigo"
+  },
+  "aboutMe": {
+    "eyebrow": "Conóceme",
+    "roles": {
+      "frontend": "Desarrollador Front-End Senior",
+      "projectManager": "Project Manager",
+      "qaAnalyst": "Analista QA"
+    },
+    "intro": "Tengo 25 años y vivo en Valinhos, São Paulo, Brasil. Cuento con más de 4 años de experiencia creando y entregando productos digitales.",
+    "description": "Me especializo en convertir ideas complejas en experiencias web eficientes, escalables y centradas en las personas. Combino una sólida base técnica en desarrollo de interfaces con una visión integral de cómo se planifica, construye y valida el software.",
+    "approach": "Para mí, el desarrollo web es mucho más que escribir código: es el punto de encuentro entre diseño, arquitectura y estrategia. Mi objetivo es crear soluciones confiables que aporten valor real a las empresas y a quienes las utilizan.",
+    "profileLabel": "Resumen de perfil",
+    "locationLabel": "Actualmente en",
+    "ageLabel": "años de edad",
+    "experienceLabel": "años de experiencia",
+    "locationNote": "Abierto a colaborar en nuevos desafíos, equipos y proyectos innovadores.",
+    "areas": {
+      "frontendTitle": "Desarrollo Front-End",
+      "frontendDescription": "Creo aplicaciones web modernas, funcionales y optimizadas, con especial atención a la usabilidad, el rendimiento y los detalles.",
+      "projectTitle": "Gestión de proyectos",
+      "projectDescription": "Coordino proyectos digitales y equipos para cumplir plazos, conectar objetivos técnicos con metas de negocio y mantener una comunicación clara.",
+      "qaTitle": "Calidad y QA",
+      "qaDescription": "Planifico pruebas y procesos de validación para detectar problemas temprano y entregar productos robustos, confiables y listos para sus usuarios."
+    },
+    "ctaTitle": "¿Tienes un proyecto en mente?",
+    "ctaDescription": "Estoy disponible para conectar y explorar nuevos desafíos.",
+    "ctaButton": "Hablemos"
   }
 }
