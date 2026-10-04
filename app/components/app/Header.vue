@@ -38,7 +38,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <template #right>
       <languageSelect />
-      <UColorModeButton />
+      <!--<UColorModeButton />-->
     </template>
 
     <template #body>
