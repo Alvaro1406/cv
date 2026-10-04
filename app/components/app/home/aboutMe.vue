@@ -12,7 +12,7 @@
 
       <div class="grid items-stretch gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-8">
         <div
-          class="rounded-[2rem] border border-border bg-card/80 p-6 shadow-sm backdrop-blur sm:p-9"
+          class="rounded-4xl border border-border bg-card/80 p-6 shadow-sm backdrop-blur sm:p-9"
         >
           <div class="mb-6 flex flex-wrap gap-2">
             <span
@@ -38,7 +38,7 @@
         </div>
 
         <aside
-          class="relative overflow-hidden rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl shadow-primary/10 sm:p-8"
+          class="relative overflow-hidden rounded-4xl bg-neutral-950 p-6 text-white shadow-xl shadow-primary/10 sm:p-8"
           :aria-label="$t('aboutMe.profileLabel')"
         >
           <div
