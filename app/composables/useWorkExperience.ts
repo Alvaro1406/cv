@@ -25,7 +25,10 @@ export const useWorkExperience = () => {
       );
 
       if (response.success) {
-        workExperience.value = response.data;
+        workExperience.value = response.data.map((item) => ({
+          ...item,
+          label: item.name,
+        }));
       }
 
       loading.value = false;

@@ -33,5 +33,8 @@
     "ctaTitle": "¿Tienes un proyecto en mente?",
     "ctaDescription": "Estoy disponible para conectar y explorar nuevos desafíos.",
     "ctaButton": "Hablemos"
+  },
+  "workExperience": {
+    "title": "Experiencia Laboral"
   }
 }
